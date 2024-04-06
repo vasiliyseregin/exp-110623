@@ -22,6 +22,7 @@ Feature: Smoke steps
     # Then I wait for 2 sec
     Then I wait for element with xpath "//div[@id='web-results']" to be present
     Then I should see page title contains "Results"
+    Then I take screenshot
     Then element with xpath "//div[@id='web-results']" should contain text "Cucumber"
 
   @regression
